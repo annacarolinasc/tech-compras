@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Compras</title>
+
+    <!-- Link do FontAwesome, uma biblioteca de ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link do CSS da página -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- Link do JavaScript -->
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header id="topo">
+      <h1 class="invisivel">Tech Compras - Compras Online</h1>
+      <a href="#">
+        <img
+          src="assets/img/logo-branca.png"
+          alt="Logo da Tech Compras"
+          id="img-logo"
+        />
+      </a>
+
+      <!-- Menu de Navegação -->
+      <nav id="menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="link-nav ativo">Mais vendidos</a></li>
+          <li>
+            <a href="celular.html" class="link-nav">Celular</a>
+          </li>
+          <li>
+            <a href="ar-condicionado.html" class="link-nav">Ar-condicionado</a>
+          </li>
+          <li><a href="televisão.html" class="link-nav">Televisão</a></li>
+          <li><a href="notebook.html" class="link-nav">Notebook</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Carrossel -->
+      <div class="carrossel-container">
+        <input type="radio" name="radio-btn" id="radio1" checked />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <input type="radio" name="radio-btn" id="radio5" />
+
+        <div class="carrossel" id="carrossel">
+          <div class="slide">
+            <img src="assets/img/celular.png" alt="Celular" />
+            <h3>Smartphone Samsung Galaxy S23</h3>
+            <a href="celular.html">Ver mais</a>
+          </div>
+
+          <div class="slide">
+            <img src="assets/img/notebook-2.png" alt="Notebook" />
+            <h3>Notebook Asus Vivobook Pro 15</h3>
+            <a href="notebook.html">Ver mais</a>
+          </div>
+
+          <div class="slide">
+            <img src="assets/img/air-fryer.png" alt="Air Fryer" />
+            <h3>Fritadeira Elétrica sem Óleo/Air Fryer Mondial</h3>
+            <a href="https://api.whatsapp.com/send?phone=+55(77)991956143&text=Ol%C3%A1%21+Gostaria+de+comprar%2Fsaber+desse+produto.">Ver mais</a>
+          </div>
+
+          <div class="slide">
+            <img src="assets/img/relogio.png" alt="Relógio" />
+            <h3>Xiaomi Redmi Watch 3 Active</h3>
+            <a href="https://api.whatsapp.com/send?phone=+55(77)991956143&text=Ol%C3%A1%21+Gostaria+de+comprar%2Fsaber+desse+produto.nb">Ver mais</a>
+          </div>
+
+          <div class="slide">
+            <img src="assets/img/tv2.png" alt="Televisão" />
+            <h3>Smart TV 50" HQ 4K</h3>
+            <a href="televisão.html">Ver mais</a>
+          </div>
+        </div>
+
+        <button class="seta seta-esquerda" id="botao-esquerda">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <button class="seta seta-direita" id="botao-direita">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="navigator-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+      </div>
+
+      <!-- Seção dos mais vendidos -->
+      <h3 id="mais-vendidos">Mais Vendidos</h3>
+
+      <div class="container-cards">
+        <div class="card">
+          <img src="assets/img/celular.png" alt="Celular" />
+          <p class="fonte-roboto-flex">
+            Smartphone Samsung Galaxy S23 FE 5G, 128GB, 8GB RAM, Câmera Tripla
+            50MP+12+10, Tela infinita 6.4" Grafite
+          </p>
+          <div class="preco-botao">
+            <h3>R$ 2.959,20</h3>
+            <button class="botao-comprar">
+              <i class="fa-solid fa-bag-shopping"></i>Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/notebook-2.png" alt="Notebook" />
+          <p class="fonte-roboto-flex">
+            Notebook Asus, Intel Core i3 1005G1, 8GB, 256GB ssd, 
+            Tela de 15,6, W11, Cinza - X515JA-BR2751W
+          </p>
+          <div class="preco-botao">
+            <h3>R$ 1.699,99</h3>
+            <button class="botao-comprar">
+              <i class="fa-solid fa-bag-shopping"></i>Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/relogio.png" alt="Relógio" />
+          <p class="fonte-roboto-flex">
+            Xiaomi Redmi Watch 3 Active
+          </p>
+          <div class="preco-botao">
+            <h3>R$ 399,00</h3>
+            <button class="botao-comprar">
+              <i class="fa-solid fa-bag-shopping"></i>Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div id="container-rodape">
+        <div class="logo-rodape">
+          <img src="assets/img/logo-preta.png" alt="Logo da Tech Compras" />
+        </div>
+
+        <p>&copy; 2023 Tech Compras. Todos os Direitos Reservados.</p>
+        <div class="redes-sociais">
+          <p>Acesse para mais <br> informações de contato:</p>
+          <div class="icones">
+            <a href="https://api.whatsapp.com/send?phone=+55(77)991956143&text=Ol%C3%A1%21+Gostaria+de+comprar%2Fsaber+desse+produto."><i class="fa-brands fa-whatsapp"></i></i></a>
+            <a href="mailto:santos.anna0514@gmail.com?subject=Tech Compras&body=Ol%C3%A1!%20Gostaria%20de%20comprar%2Fsaber%20desse%20produto."><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
